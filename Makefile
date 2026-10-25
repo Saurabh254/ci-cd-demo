@@ -14,5 +14,5 @@ run:
 
 pull:
 	git pull origin main
-deploy: kill-existing pull build run
+deploy: kill-existing build run
 	echo "Server restarted successfully!!!"

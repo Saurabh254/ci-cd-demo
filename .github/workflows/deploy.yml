@@ -21,4 +21,5 @@ jobs:
           port: ${{ secrets.SERVER_PORT || '22' }}
           script: |
             cd /root/ci-cd-demo
+            git pull origin main
             make deploy
