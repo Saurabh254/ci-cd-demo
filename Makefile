@@ -10,7 +10,7 @@ build:
 	docker build -t demoapp .
 
 run:
-	docker run -p 8000:8000 demoapp -d
+	docker run -d -p 8000:8000 --name demoapp demoapp
 
 pull:
 	git pull origin main
